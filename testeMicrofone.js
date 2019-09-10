@@ -41,6 +41,24 @@ function colorPids(vol) {
     for (var i = 0; i < elem_range.length; i++) {
   
       // console.log(elem_range[i]);
-      elem_range[i].style.backgroundColor="#69ce2b";
+      
+      if(amout_of_pids <= 3){  // Volume baixo  Azulzinho
+        elem_range[i].style.backgroundColor="blue";
+      }
+
+      if(amout_of_pids > 3 && amout_of_pids <= 8){// Manter Verde 
+        elem_range[i].style.backgroundColor="green";
+      }
+      if(amout_of_pids > 8 && amout_of_pids <= 9){
+        // Manter amarelinho
+        elem_range[i].style.backgroundColor="yellow";
+      }
+      if(amout_of_pids > 9){
+        // Manter vermelho
+        elem_range[i].style.backgroundColor="red";
+      }
+      // elem_range[i].style.backgroundColor="#69ce2b";
+
+
     }
   }
