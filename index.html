@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="pt-br">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="testeMicrofone.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.7/d3.min.js"></script>
+  <script src="jquery.js"></script>
+
+</head>
+
+<body>
+  <div ng-controller="appController">
+    <h1>{{ teste }}</h1>
+
+    <webcam></webcam>
+
+
+
+  </div>
+
+
+  <h1 id="progress">JavaScript is turned off, or your browser is realllllly slow</h1>
+
+
+  <div class="pids-wrapper">
+    <div class="pid"></div>
+    <div class="pid"></div>
+    <div class="pid"></div>
+    <div class="pid"></div>
+    <div class="pid"></div>
+    <div class="pid"></div>
+    <div class="pid"></div>
+    <div class="pid"></div>
+    <div class="pid"></div>
+    <div class="pid"></div>
+  </div>
+
+
+
+
+
+
+  <script src="app.js"></script>
+  <script src="webcam.js"></script>
+  <script src="testeVelocidade.js"></script>
+  <script src="testeMicrofone.js"></script>
+
+</body>
+
+</html>
