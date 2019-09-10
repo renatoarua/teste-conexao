@@ -12,23 +12,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.7/d3.min.js"></script>
   <script src="jquery.js"></script>
 
+  <!-- teste de conexão -->
+  <link href="index.css" rel="stylesheet">
+
 </head>
 
 <body>
+  <!-- Inicio webcam -->
   <div ng-controller="appController">
     <h1>{{ teste }}</h1>
-
     <webcam></webcam>
-    any
-
-
-
   </div>
+  <!-- Fim webcam -->
 
-
-  <h1 id="progress">JavaScript is turned off, or your browser is realllllly slow</h1>
-
-
+  <!-- Inicio barra de áudio -->
   <div class="pids-wrapper">
     <div class="pid"></div>
     <div class="pid"></div>
@@ -41,19 +38,59 @@
     <div class="pid"></div>
     <div class="pid"></div>
   </div>
+  <!-- Fim barra de áudio -->
 
 
-
-
+  <!-- Inicio teste de conexão -->
+  <div>
+    <h1>Teste Conexão TELEMEDICINA</h1>
+    <div id="startStopBtn" onclick="startStop()"></div>
+    <div id="serverId">Selecting server...</div>
+    <div id="test">
+      <div class="testGroup">
+        <div class="testArea">
+          <div class="testName">Download</div>
+          <div id="dlText" class="meterText"></div>
+          <div class="unit">Mbps</div>
+        </div>
+        <div class="testArea">
+          <div class="testName">Upload</div>
+          <div id="ulText" class="meterText"></div>
+          <div class="unit">Mbps</div>
+        </div>
+      </div>
+      <div class="testGroup">
+        <div class="testArea">
+          <div class="testName">Ping</div>
+          <div id="pingText" class="meterText"></div>
+          <div class="unit">ms</div>
+        </div>
+        <div class="testArea">
+          <div class="testName">Jitter</div>
+          <div id="jitText" class="meterText"></div>
+          <div class="unit">ms</div>
+        </div>
+      </div>
+      <div id="ipArea">
+        IP Address: <span id="ip"></span>
+      </div>
+    </div>
+  </div>
+  <!-- Fim teste de conexão -->
 
   <script src="app.js"></script>
   <script src="webcam.js"></script>
-  <script src="testeVelocidade.js"></script>
   <script src="testeMicrofone.js"></script>
 
+  <!-- teste de conexão -->
+  <!-- teste de conexão -->
+  <script type="text/javascript" src="speedtest.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript">
+    initUI();
+    selectServer();
+  </script>
 
-      
-    <button onClick="testeDownloadUpload()"> fghjklç </button>
 </body>
 
 </html>
