@@ -4,15 +4,17 @@
     width: 100vw;
   }
   
-  ul li:before {
+  /* ul li:before {
       left: 0;
       content: '\2022';
       color: #000;
       position: absolute;
     font-size: 20px;
-  }
+  } */
 
-  
+ul{
+    text-align: left;
+}
   .bar {
     width: 8px;
     height: 275px;
@@ -173,18 +175,21 @@ h1{
     color:#404040;
 }
 #startStopBtn{
-    display:inline-block;
-    margin:0 auto;
-    color:#6060AA;
-    background-color:rgba(0,0,0,0);
-    border:0.15em solid #6060FF;
-    border-radius:0.3em;
-    transition:all 0.3s;
-    box-sizing:border-box;
-    width:8em; height:3em;
-    line-height:2.7em;
-    cursor:pointer;
+    display: inline-block;
+    margin: 0 auto;
+    color: #6060AA;
+    background-color: rgba(0,0,0,0);
+    border: 0.15em solid #6060FF;
+    border-radius: 0.3em;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    width: 85px;
+    /* height: 3em; */
+    line-height: 2.7em;
+    cursor: pointer;
     box-shadow: 0 0 0 rgba(0,0,0,0.1), inset 0 0 0 rgba(0,0,0,0.1);
+    padding: 0px;
+    text-align: center;
 }
 #startStopBtn:hover{
     box-shadow: 0 0 2em rgba(0,0,0,0.1), inset 0 0 1em rgba(0,0,0,0.1);
@@ -200,30 +205,31 @@ h1{
 #startStopBtn.running:before{
     content:"Abort";
 }
-#test{
-    margin-top:2em;
-    margin-bottom:12em;
-}
+ 
 div.testArea{
-    display:inline-block;
-    width:14em;
-    height:9em;
-    position:relative;
-    box-sizing:border-box;
+    display: inline-block;
+    width: 7em;
+    height: 8.2em;
+    position: relative;
+    box-sizing: border-box;
 }
 div.testName{
-    position:absolute;
-    top:0.1em; left:0;
-    width:100%;
-    font-size:1.4em;
-    z-index:9;
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    width: 50%;
+    font-size: 1.1em;
+    z-index: 9;
+
 }
 div.meterText{
-    position:absolute;
-    bottom:1.5em; left:0;
-    width:100%;
-    font-size:2.5em;
-    z-index:9;
+    position: absolute;
+    bottom: 3em;
+    left: 0;
+    width: 50%;
+    font-size: 1.5em;
+    z-index: 9;
+ 
 }
 #dlText{
     color:#6060AA;
@@ -235,14 +241,15 @@ div.meterText{
     color:#AA6060;
 }
 div.meterText:empty:before{
-    color:#505050 !important;
+    color:#4d7dff !important;
     content:"0.00";
 }
 div.unit{
-    position:absolute;
-    bottom:2em; left:0;
-    width:100%;
-    z-index:9;
+    position: absolute;
+    bottom: 3em;
+    left: 0;
+    width: 100%;
+    z-index: 9;
 }
 div.testGroup{
     display:inline-block;
