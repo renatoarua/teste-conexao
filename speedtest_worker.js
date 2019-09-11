@@ -1,4 +1,4 @@
-/*
+  /*
 	HTML5 Speedtest - Worker
 	by Federico Dossena
 	https://github.com/adolfintel/speedtest/
