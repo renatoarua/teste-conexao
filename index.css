@@ -1,3 +1,165 @@
+/* Old css  */
+.full-height{
+    height: 150vh;
+    width: 100vw;
+  }
+  
+  ul li:before {
+      left: 0;
+      content: '\2022';
+      color: #000;
+      position: absolute;
+    font-size: 20px;
+  }
+
+  
+  .bar {
+    width: 8px;
+    height: 275px;
+    border: 1px solid #AFA5A5;
+    position: relative;
+    margin: auto;
+  }
+  .bar::before {
+    content: '';
+    position: absolute;
+    top: 283px;
+    background-image: url(https://nsassets4.s3.amazonaws.com/landingpages/sound.png);
+    background-repeat: no-repeat;
+    left: -2px;
+    width: 16px;
+    height: 16px;
+  }
+  
+    @media (height: 644px) {
+      .Drawer-esquerdo {
+        height: 38.7vw;
+      }
+    }
+    @media (height: 682px) {
+      .Drawer-esquerdo {
+        height: 45vw;
+      }
+    }
+    @media (height: 667px) {
+      .Drawer-esquerdo {
+        height: 44vw;
+      }
+    }
+    @media (height: 548px) {
+      .Drawer-esquerdo {
+        height: 36.5vw;
+      }
+    }
+    @media (height: 860px) {
+      .Drawer-esquerdo {
+        height: 42.3vw;
+      }
+    }
+    @media (height: 892px) {
+      .Drawer-esquerdo {
+        height: 44vw;
+      }
+    }
+    @media (height: 993px) {
+      .Drawer-esquerdo {
+        height: 49.6vw;
+      }
+    }
+    @media (height: 979px) {
+      .Drawer-esquerdo {
+        height: 47.6vw;
+      }
+    }
+    @media (height: 900px) {
+      .Drawer-esquerdo {
+        height: 44.4vw;
+      }
+    }
+    @media (height: 767px) {
+      .Drawer-esquerdo {
+        height: 37.4vw;
+      }
+    }
+    @media (height: 799px) {
+      .Drawer-esquerdo {
+        height: 39.1vw;
+      }
+    }
+    @media (height: 1440px) {
+      .Drawer-esquerdo {
+        height: 73.1vw;
+      }
+    }
+    @media (height: 1307px) {
+      .Drawer-esquerdo {
+        height: 66.1vw;
+      }
+    }
+    @media (height: 1339px) {
+      .Drawer-esquerdo {
+        height: 67.8vw;
+      }
+    }
+    @media (max-width: 425px) {
+      .Drawer-esquerdo {
+        height: 36rem;
+      }
+  }
+  @media (max-width: 710px) {
+      .Drawer-esquerdo {
+        height: 38rem;
+      }
+    }
+  
+  @media (max-width: 1024px) {
+      .Drawer-esquerdo {
+        width: 100%;
+        height: 54vw;
+      }
+  }  
+  
+  @media (min-width: 1680px) {
+      .Drawer-esquerdo {
+        height: 45.4vw!important;
+      }
+    }
+  
+ 
+    
+    .Drawer-esquerdo {
+      width: 100%;
+      height: 46.4vw;
+    }
+  
+  
+    @media (max-width: 768px) {
+      .Drawer-esquerdo {
+        width: 100%;
+        height: 52rem;
+      }
+    
+      .background-login {
+        height: 70vw;
+      }
+    }
+  
+    .camera {
+      padding: 0;
+      height: 100%;
+      width: 85%!important;
+      padding-left: 10px;
+      margin-top: unset;
+    }
+  
+    video {
+      width: 46% !important;
+      height: 10% !important;
+      /* height: 300px; */
+    }
+
+
+/* Novo css  */
 html,body{
     border:none; padding:0; margin:0;
     background:#FFFFFF;

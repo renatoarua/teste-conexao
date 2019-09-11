@@ -8,6 +8,8 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link href="testeMicrofone.css" rel="stylesheet">
 
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.7/d3.min.js"></script>
   <script src="jquery.js"></script>
@@ -18,11 +20,187 @@
 </head>
 
 <body>
+<!-- <app-menu></app-menu> -->
+
+ 
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+                <img src="img/icone-chamada-teste-conexao.png" class="logo" style="width: 10%;">
+
+                <img src="img/Logo-sotext.png" class="logo img-responsive" style="margin-top: -50px;">
+
+            </div>
+
+            
+            <div class="col-md-6 " style="overflow-x: hidden;overflow-y: scroll;  height: 320px;">
+                <div class="col-md-12" style="margin-bottom: 4%;">
+                    <h5 class="text-primary"> Iniciar sessão de consulta de vídeo </h5>
+                    <span class="text-muted">
+                      
+                        Configure sua webcam, microfone e rede antes de iniciar a sessão de consulta de vídeo
+                    </span>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-2">
+
+                        <b>1 -</b>
+
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-lg-10 col-10">
+                        <span>Certifique-se de que seu navegador Web suporta chamadas de vídeo.
+                            </span><br>
+                        <span class="text-muted">Conceda permissão ao seu navegador para acessar sua câmera e microfone</span>
+                    </div>
+                </div>
+                <div class="row" style="padding: unset;padding-left: 30px;">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10 row"
+                        style="background-color: white; text-align: center; border: 1px solid; border-color: #1265b9;;  margin-top: 2%; margin-bottom: 4%;">
+
+                        <div class="col-md-2">
+                            <img src="assets/build/img/desktop.png" class="logo img-responsive" style="width: 70px;">
+                        </div>
+
+                        <div class="col-md-10" style="padding-top: 10px;">
+                            No computador, a chamada por vídeo apresenta  o melhor desempenho com a versão mais recente do <a
+                                href="https://www.google.com/chrome/">Google Chrome 
+                               </a>
+                                ou do <a 
+                                href="https://www.mozilla.org/en-US/firefox/new/"> Mozilla Firefox</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+
+                        <b></b>
+
+                    </div>
+                    <div class="col-md-10">
+                        <h6 class="text-primary " style="margin-left: -15px">
+                            Usando outros dispositivos?</h6>
+                        <ul>
+                            <li><small class="text-muted">Para navegadores web do android ou tablets, atualize para a versão mais recente do Chrome ou Firefox. <br>
+                                    <b>A video chamada no navegador Web do tablet com iOS não é suportada</b></small></li>
+
+                            <li><small class="text-muted"> e você está usando um smartphone, baixe the Virtual Practice app, disponivel na <a
+                                        class="googleplaylink"
+                                        href="https://play.google.com/store/apps/details?id=com.needstreet.health.hp"> Google Play</a>
+                                        (Android 4.1 ou superior) ou na
+                                        <a class="ituneslink"
+                                        href="https://itunes.apple.com/in/app/mobile-doctor-your-virtual/id648841439?mt=8">App Store </a>
+                                        (iOS 6 ou superior)
+                                </small></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-2">
+
+                        <b>2 -</b>
+
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-lg-10 col-10">
+                        <span><b> Verifique sua webcam e compatibilidade com microfone</b></span><br>
+                        <span class="text-muted">Verifique se a webcam e os dispositivos de microfone estão conectados corretamente
+                          </span>
+                    </div>
+
+                    <div class="col-md-10" style="padding-left: 30px;">
+                        <!-- <div ng-controller="appController"> -->
+                            <!-- <h1>{{ teste }}</h1> -->
+                            <webcam></webcam>
+                          <!-- </div> -->
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-12 f-r">
+
+                        <!-- <audio></audio> -->
+                        <div class="bar f-r" style="visibility: visible;">
+                            <div class="level"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12" style="margin-top: 20px;">
+                        <span style="font-size: 11px;"> Nota: Esta página apenas verifica a acessibilidade da sua webcam e microfone deste navegador.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 menor" style="overflow: auto;  padding-left: 5%;  height: 300px;">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-2">
+
+                        <b>3 -</b>
+
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-lg-10 col-10">
+                        <span> Verifique a qualidade de sua conexão com a internet </span><br>
+                        <span class="text-muted">Descubra sua velocidade de conexão com a Internet e compatibilidade de rede</span>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+                <div class="row" style="padding: unset;padding-left: 30px;">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10 row"
+                        style="background-color: white; text-align: left; border: 1px solid; border-color: #1265b9;;  margin-top: 2%; margin-bottom: 4%;">
+                        <div class="col-md-12" style="padding-top: 10px;padding-bottom: 10px;">
+                            <span><b>A velocidade da sua intenet atualmente é de
+                              </b></span><br>
+                            <span class="text-primary">  Velocidade 56.9 MBs</span>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-lg-2 "></div>
+                    <div class="col-md-10 col-lg-10 ">
+                        <ul>
+                            <li>
+                                    <small class="text-muted">  Recomendamos no mínimo 500 kbps de velocidade de conexão</small>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+
+                        <b></b>
+
+                    </div>
+                    <div class="col-md-10">
+                        <ul>
+                            <li><small
+                                    class="text-muted">A perfomance é melhor em uma rede Wi-Fi ou 4G</small>
+                            </li>
+
+                            <!-- <li><small class="text-muted">Se você encontrar algum problema durante a execução, atualize a pagina do seu navegador</small></li> -->
+
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+
+
+
+
+
+
   <!-- Inicio webcam -->
-  <div ng-controller="appController">
-    <h1>{{ teste }}</h1>
-    <webcam></webcam>
-  </div>
+  
   <!-- Fim webcam -->
 
   <!-- Inicio barra de áudio -->
