@@ -181,7 +181,7 @@
             Clique em iniciar para ver qual é a sua velocidade e se é abito a usar o mesmo.
           </div>
         </div>
-        <div class="row" style="padding: unset;padding-left: 30px;">
+        <!-- <div class="row" style="padding: unset;padding-left: 30px;">
           <div class="col-md-2"></div>
           <div class="col-md-10 row"
             style="background-color: white; text-align: left; border: 1px solid; border-color: #1265b9;;  margin-top: 2%; margin-bottom: 4%;">
@@ -218,7 +218,7 @@
 
           </div>
 
-        </div>
+        </div> -->
         <div class="row">
           <div class="col-md-2 col-lg-2 "></div>
           <div class="col-md-10 col-lg-10 ">
@@ -249,6 +249,47 @@
         </div>
       </div>
     </div>
+  </div>
+
+
+
+  <!-- TESTE para o bug -->
+  <div>
+  <div>
+    <h1>Teste Conexão TELEMEDICINA</h1>
+    <div id="startStopBtn" onclick="startStop()"></div>
+    <div id="serverId">Selecting server...</div>
+    <div id="test">
+      <div class="testGroup">
+        <div class="testArea">
+          <div class="testName">Download</div>
+          <div id="dlText" class="meterText"></div>
+          <div class="unit">Mbps</div>
+        </div>
+        <div class="testArea">
+          <div class="testName">Upload</div>
+          <div id="ulText" class="meterText"></div>
+          <div class="unit">Mbps</div>
+        </div>
+      </div>
+      <div class="testGroup">
+        <div class="testArea">
+          <div class="testName">Ping</div>
+          <div id="pingText" class="meterText"></div>
+          <div class="unit">ms</div>
+        </div>
+        <div class="testArea">
+          <div class="testName">Jitter</div>
+          <div id="jitText" class="meterText"></div>
+          <div class="unit">ms</div>
+        </div>
+      </div>
+      <div id="ipArea">
+        IP Address: <span id="ip"></span>
+      </div>
+    </div>
+  </div>
+  <!-- Fim teste de conexão -->
   </div>
 
 
