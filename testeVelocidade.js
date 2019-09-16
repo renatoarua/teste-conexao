@@ -1,5 +1,5 @@
 function testeDownloadUpload(){
-    debugger
+    // debugger
     //JUST AN EXAMPLE, PLEASE USE YOUR OWN PICTURE!
 var imageAddr = "https://upload.wikimedia.org/wikipedia/commons/f/ff/Pizigani_1367_Chart_10MB.jpg"; //10mb
 // var imageAddr = "http://www.effigis.com/wp-content/uploads/2015/02/Airbus_Pleiades_50cm_8bit_RGB_Yogyakarta.jpg"; //50mb
