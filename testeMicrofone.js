@@ -32,33 +32,86 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: true })
 });
 
 function colorPids(vol) {
+  debugger
     let all_pids = $('.pid');
     let amout_of_pids = Math.round(vol/10);
     let elem_range = all_pids.slice(0, amout_of_pids)
-    for (var i = 0; i < all_pids.length; i++) {
-      all_pids[i].style.backgroundColor="#e6e7e8";
-    }
-    for (var i = 0; i < elem_range.length; i++) {
-  
-      // console.log(elem_range[i]);
+    
+    // for (var i = 0; i < all_pids.length; i++) {
       
-      if(amout_of_pids <= 3){  // Volume baixo  Azulzinho
-        elem_range[i].style.backgroundColor="blue";
-      }
+    //  // all_pids[i].style.backgroundColor="#e6e7e8";
+    // }
 
-      if(amout_of_pids > 3 && amout_of_pids <= 8){// Manter Verde 
-        elem_range[i].style.backgroundColor="green";
-      }
-      if(amout_of_pids > 8 && amout_of_pids <= 9){
-        // Manter amarelinho
-        elem_range[i].style.backgroundColor="yellow";
-      }
-      if(amout_of_pids > 9){
-        // Manter vermelho
-        elem_range[i].style.backgroundColor="red";
-      }
-      // elem_range[i].style.backgroundColor="#69ce2b";
+    $(".pid").css("background","#e6e7e8");
 
 
+    if(amout_of_pids <= 3){
+      $(".pid-0").css("background","blue");
     }
+
+    if(amout_of_pids > 3 && amout_of_pids <= 8){// Manter Verde 
+    //  elem_range[i].style.backgroundColor="green";
+      $(".pid-0").css("background","blue");
+      $(".pid-1").css("background","green");
+    }
+
+    if(amout_of_pids > 8 && amout_of_pids <= 9){
+      // Manter amarelinho
+   //   elem_range[i].style.backgroundColor="";
+      $(".pid-0").css("background","blue");
+      $(".pid-1").css("background","green");
+      $(".pid-2").css("background","green");
+    }
+
+    if(amout_of_pids > 9 && amout_of_pids <= 10){
+      // Manter vermelho
+     // elem_range[i].style.backgroundColor="red";
+      $(".pid-0").css("background","blue");
+      $(".pid-1").css("background","green");
+      $(".pid-2").css("background","green");
+      $(".pid-3").css("background","yellow");
+    }
+
+    if(amout_of_pids > 10){
+      // Manter vermelho
+     // elem_range[i].style.backgroundColor="red";
+      $(".pid-0").css("background","blue");
+      $(".pid-1").css("background","green");
+      $(".pid-2").css("background","green");
+      $(".pid-3").css("background","yellow");
+      $(".pid-4").css("background","red");
+      $(".pid-5").css("background","red");
+    }
+
+    // for (var i = 0; i < elem_range.length; i++) {
+  
+    //   // console.log(elem_range[i]);
+      
+    //   if(amout_of_pids <= 3){  // Volume baixo  Azulzinho
+    //     // elem_range[i].style.backgroundColor="blue";
+    //     //$('.pid').style.backgroundColor="blue"
+    //     // $('.colun').style.backgroundColor="blue";
+    //     // element_range[".colun"].style.backgroundColor="blue"
+
+        
+    //     elem_range[i].style.backgroundColor="blue";
+    //   }
+
+    //   if(amout_of_pids > 3 && amout_of_pids <= 8){// Manter Verde 
+    //     elem_range[i].style.backgroundColor="green";
+    //   }
+
+    //   if(amout_of_pids > 8 && amout_of_pids <= 9){
+    //     // Manter amarelinho
+    //     elem_range[i].style.backgroundColor="yellow";
+    //   }
+
+    //   if(amout_of_pids > 9){
+    //     // Manter vermelho
+    //     elem_range[i].style.backgroundColor="red";
+    //   }
+    //   // elem_range[i].style.backgroundColor="#69ce2b";
+
+
+    // }
   }
