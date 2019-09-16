@@ -78,8 +78,8 @@ function colorPids(vol) {
       $(".pid-0").css("background","blue");
       $(".pid-1").css("background","green");
       $(".pid-2").css("background","green");
-      $(".pid-3").css("background","yellow");
-      $(".pid-4").css("background","red");
+      $(".pid-3").css("background","green");
+      $(".pid-4").css("background","yellow");
       $(".pid-5").css("background","red");
     }
 
