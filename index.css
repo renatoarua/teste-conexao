@@ -1,4 +1,13 @@
 /* Old css  */
+
+.h-content{
+  height: 60vh;
+}
+
+.align-button{
+  margin-top:10px;
+}
+
 .full-height{
     height: 150vh;
     width: 100vw;
@@ -11,6 +20,10 @@
       position: absolute;
     font-size: 20px;
   } */
+
+  .img-responsive{
+    width: unset;
+  }
 
 
 /* width */
@@ -77,6 +90,11 @@ ul{
     margin-left:-12px;
   }
 
+.little-logo{
+  width:10%;
+}
+
+
   .colun-1{
     height: 20px;
     display: grid;
@@ -93,6 +111,14 @@ ul{
     margin-top: 20px;
     position: absolute;
 }
+
+.pids-align{
+    text-align: center;
+    margin-left: -55px;
+    margin-top: 40px;
+    display: block;
+}
+ 
  
 
   .colun-3{
@@ -186,6 +212,46 @@ ul{
       .Drawer-esquerdo {
         height: 36rem;
       }
+
+      .align-button{
+        margin-top: -100px;
+        margin-left: 160px;
+      }
+
+      .pids-align{
+        text-align: center;
+        margin-left: 71px;
+        margin-top: 40px;
+        display: block;
+      }
+
+   
+
+      .h-m{
+        margin-top: 117px;
+
+      }
+
+      .h-content{
+        height: 100%;
+        overflow: unset!important;
+      }
+
+      body{
+        overflow-x:hidden;
+      }
+
+      .little-logo{
+      width: 25%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      }
+
+      .img-responsive{
+        width: 100%;
+      }
+      
   }
   @media (max-width: 710px) {
       .Drawer-esquerdo {

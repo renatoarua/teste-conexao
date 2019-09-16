@@ -32,7 +32,7 @@ navigator.mediaDevices.getUserMedia({ audio: true, video: true })
 });
 
 function colorPids(vol) {
-  debugger
+  // debugger
     let all_pids = $('.pid');
     let amout_of_pids = Math.round(vol/10);
     let elem_range = all_pids.slice(0, amout_of_pids)
